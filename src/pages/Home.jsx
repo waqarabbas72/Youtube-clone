@@ -160,20 +160,22 @@ const Home = () => {
         {
             id: 20,
             thumbnail: "https://i.ytimg.com/vi/mtfWKrKUV0I/hqdefault.jpg",
-            title: "Happy",
+            title: "Happy", 
             channel: "Pharrell Williams",
             views: 2200000000,
             date: "10 years ago"
         }
     ]
     return (
-        <>
-            <Navbar />
-            <div className='flex'>
-                <Sidebar />
-                <VideoGrid videos={videos} />
+        <div className="flex h-screen overflow-hidden">
+            <Sidebar />
+            <div className="flex flex-col flex-1">
+                <Navbar />
+                <div className="overflow-y-auto p-4 relative h-screen">
+                    <VideoGrid videos={videos} />
+                </div>
             </div>
-        </>
+        </div>
     )
 }
 

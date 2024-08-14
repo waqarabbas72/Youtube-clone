@@ -20,7 +20,7 @@ import { SiYoutubeshorts } from 'react-icons/si';
 
 const Sidebar = () => {
     return (
-        <div className="h-screen w-64 bg-white shadow-lg p-4">
+        <div className="h-screen w-64 fixed bg-white p-4 top-20">
             <ul className="space-y-3">
                 {/* Home */}
                 <li className="flex items-center space-x-4 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
