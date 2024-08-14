@@ -11,7 +11,18 @@ export const videosApi = createApi({
       query: () =>
         `videos?part=snippet,contentDetails,statistics&chart=mostPopular&regionCode=US&maxResults=50&key=AIzaSyBG9vS1AxPoHcskKMxDQh40wZ2o9zuT3ZQ`,
     }),
+    getVideoCategories: builder.query({
+      query: () => ({
+        url: "videoCategories",
+        params: {
+          part: "snippet",
+          regionCode: "US", // You can change this based on your requirement
+          key: "AIzaSyBG9vS1AxPoHcskKMxDQh40wZ2o9zuT3ZQ",
+        },
+      }),
+    }),
   }),
 });
 
-export const { useGetTrendingVideosQuery } = videosApi;
+export const { useGetTrendingVideosQuery, useGetVideoCategoriesQuery } =
+  videosApi;
