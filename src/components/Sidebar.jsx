@@ -20,8 +20,8 @@ import { SiYoutubeshorts } from 'react-icons/si';
 
 const Sidebar = () => {
     return (
-        <div className="fixed top-16 left-0 w-60 h-full bg-white p-4 ">
-            <ul className="space-y-3">
+        <div className="fixed top-16 left-0 w-60 h-full bg-white p-4 overflow-auto scrollbar-thin">
+            <ul className="space-y-3 ">
                 {/* Home */}
                 <li className="flex items-center space-x-4 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
                     <FiHome className="w-6 h-6 text-gray-700" />
