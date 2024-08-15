@@ -4,7 +4,7 @@ import { FiBell, FiMic, FiPlus, FiSearch } from 'react-icons/fi'
 
 const Navbar = () => {
     return (
-        <div className='flex flex-row justify-between items-center p-3'>
+        <div className="fixed top-0 left-0 w-full h-16 bg-white flex items-center justify-between px-4 z-10">
             <div className='flex items-center gap-4'>
                 <FaBars className='text-xl cursor-pointer' />
                 <span className='flex items-center font-bold text-xl cursor-pointer'>
